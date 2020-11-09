@@ -8,4 +8,4 @@ setInterval(function(){
     // 매 61초마다 꿀잼각 누르기
     $("#player_area > div.htmlplayer_wrap > div > div.player_item_list.on.pip > ul > li.honey_fun > button").trigger("click");
     $("#player_area > div.htmlplayer_wrap > div > div.player_item_list.on.pip.smallest > ul > li.honey_fun > button").trigger("click");
-}, 61000);
+}, 5000);
