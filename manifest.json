@@ -1,0 +1,20 @@
+{
+    "name": "AfreecaTV Auto UP",
+    "version": "1.0.1",
+    "description": "아프리카티비 자동 추천/꿀잼각 익스텐션",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "inject.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "inject!"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}
