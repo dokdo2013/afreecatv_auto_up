@@ -1,19 +1,14 @@
 {
     "name": "AfreecaTV Auto UP",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "아프리카티비 자동 추천/꿀잼각 익스텐션",
     "manifest_version": 2,
     "content_scripts": [{
-        "run_at": "document_end",
         "js": [
             "inject.js"
         ],
         "matches": [
-            "https://play.afreecatv.com/*"
+            "https://play.afreecatv.com/*/*"
         ]
-    }],
-    "permissions" : [
-        "activeTab",
-        "<all_urls>"
-    ]
+    }]
 }
