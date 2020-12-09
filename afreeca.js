@@ -25,5 +25,21 @@ $(document).ready(function(){
                 $("#player_area > div.htmlplayer_wrap > div > div.player_item_list.on.pip.smallest > ul > li.honey_fun > button").trigger("click");
             }, 61000);
         }
+
+        $("#chat_area").on('DOMNodeInserted', function(){
+            var tmp = $("#chat_area").children().last().find("dd").text();
+            if(tmp[0] == '!' && tmp[1] == '!' && tmp[2] == '신' && tmp[3] == '청' && tmp[4] == '곡' && tmp[5] == '/'){
+                var real_tmp = tmp.slice(6);
+                var link = 'https://www.melon.com/search/song/index.htm?q=' + real_tmp + "&section=&searchGnbYn=Y&kkoSpl=N&kkoDpType=&ipath=srch_form";
+                window.open(link);
+            }
+        });        
+
+        setTimeout(() => {
+            // 멜론 실행
+            $("#frm_defaultList > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > div > div > button.btn_icon.play > span").trigger("click");
+        }, 2000);
+
+
     });
 });    
